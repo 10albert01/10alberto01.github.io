@@ -3,48 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Imágenes</title>
+    <title>Página Futurista</title>
     <style>
-        /* Estilos para la imagen de fondo */
         body {
-            background-image: url('https://images.prismic.io/qamarero/ZfWWXcmUzjad_TY5_tipos-de-chupitos-lista-de-los-mas-populares.jpg?auto=format%2Ccompress&width=2048'); /* Cambia esta URL a la de tu imagen */
-            background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-            background-position: center;
-            background-repeat: no-repeat;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: #ffffff;
+            text-align: center;
+            overflow: hidden;
         }
 
-        /* Contenedor para las fotos */
-        .gallery {
+        h1 {
+            font-size: 3rem;
+            margin: 20px 0;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            padding: 20px;
         }
 
-        .gallery img {
-            width: 200px;
-            height: 200px;
+        .image-container img {
+            width: 150px;
+            height: 150px;
             margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s;
         }
 
-        .gallery img:hover {
-            transform: scale(1.1); /* Efecto al pasar el ratón por encima */
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            color: #ccc;
         }
     </style>
 </head>
 <body>
-    <div class="gallery">
-        <img src="https://photos.fife.usercontent.google.com/pw/AP1GczOT4u_2t_Cb78_o_9mJjHw1SYAIP2H8PpT32RPCwXJuV0YfBWf_FvotGw=w651-h869-s-no-gm?authuser=0" alt="Imagen 1">
-        <img src="https://photos.fife.usercontent.google.com/pw/AP1GczOOBuonZJ7X5Hn1SwB1j0KxyatTXFe_rbQdKXOZZo37Xad5RiBraoGETg=w1159-h869-s-no-gm?authuser=0" alt="Imagen 2">
-        <img src="URL_DE_LA_TERCERA_IMAGEN" alt="Imagen 3">
-        <img src="URL_DE_LA_CUARTA_IMAGEN" alt="Imagen 4">
+    <div class="container">
+        <h1>Bienvenido a la Era Futurista</h1>
+        <p>Explora el futuro de la tecnología y el diseño.</p>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/150/FF5733/FFFFFF?text=Futurista1" alt="Imagen 1">
+            <img src="https://via.placeholder.com/150/33FF57/FFFFFF?text=Futurista2" alt="Imagen 2">
+            <img src="https://via.placeholder.com/150/3357FF/FFFFFF?text=Futurista3" alt="Imagen 3">
+            <img src="https://via.placeholder.com/150/FF33A1/FFFFFF?text=Futurista4" alt="Imagen 4">
+        </div>
     </div>
+    <footer>
+        © 2024 - Tu Nombre Aquí
+    </footer>
 </body>
 </html>
